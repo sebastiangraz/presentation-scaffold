@@ -1,0 +1,34 @@
+welcome: I am some imported data (from example.yml)
+
+list:
+  - Item one
+  - Item two
+  - Item three
+
+name:
+  firstName: Seb
+  lastName: Graz
+
+slides:
+- title: This is a title
+  flush: true
+  slidecontent:
+  - content: <img src="http://localhost:3000/assets/images/avo.png"/>
+  - content: hey this is content
+  - content: hey this is even more content
+  - content: “While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment.”
+- title: This is a title
+  slidecontent:
+  - content: <img src="http://localhost:3000/assets/images/avo.png"/>
+- title: This is a title
+  slidecontent:
+  - content: <img src="http://localhost:3000/assets/images/avo.png"/>
+  - content: “While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment.”
+
+# slides:
+#   - title: This is a title
+#     content:
+#       - <img src="http://localhost:3000/assets/images/avo.png"/>
+#       - Short content
+#       - Hey this is some more content
+#       - Hey this is some more content in the bottom

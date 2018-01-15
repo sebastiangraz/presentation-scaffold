@@ -1,0 +1,23 @@
+---
+title: Example Page title
+quote: I am some imported data (from this page)
+---
+
+<div class="slide">
+  <div class="slide__wrapper">
+    {{#each example.slides}}
+    <div class="slide__block">
+      <div class="block-border">
+        <h1>{{../title}}</h1>
+        <div class="grid {{#flush}}padding{{/flush}}">
+        {{#each slidecontent}}
+          <div class="grid-item">
+            {{{content}}}
+          </div>
+        {{/each}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
