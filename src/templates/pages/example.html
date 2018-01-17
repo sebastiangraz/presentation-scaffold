@@ -10,7 +10,9 @@ quote: I am some imported data (from this page)
     {{#each example.slides}}
     <div class="slide__block">
       <div class="block-border">
-        <h1>{{../title}}</h1>
+        {{#if ./title}}
+          <h1 class="black-40 f6 ttu tracked">{{./title}}</h1>
+        {{/if}}
         <div class="grid {{#flush}}padding{{/flush}}">
         {{#each slidecontent}}
           <div class="grid-item">

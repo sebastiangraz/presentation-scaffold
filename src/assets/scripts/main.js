@@ -27,30 +27,33 @@ function ioHandler(entries) {
 }
 
 var slides = document.querySelectorAll('.slide__block');
-var currDataIndex = 0;
-
 var rootEl = document.querySelector('.slide__wrapper');
 
-var block = document.querySelectorAll('.block-border');
+function scaleContent(el) {
+  var aspect = {
+    w : 1024,
+    h : 768
+  }
+  var viewportW = window.innerWidth * 0.9;
+  var viewportH = window.innerHeight;
 
-// function doResize(el) {
-//   var scale, origin;
-//
-//   scale = Math.min(
-//     window.innerWidth / el.getBoundingClientRect().width,
-//     window.innerHeight / el.getBoundingClientRect().width
-//   );
-//
-//   Object.assign(el.style,{transform: "scale(" + scale + ")"})
-// }
-//
-//
-// forEach(block, function (index, element) {
-//   doResize(element)
-// });
+  var scale = Math.min(
+    viewportW / aspect.w,
+    viewportH / aspect.h
+  );
+  var ratio = window.innerWidth / window.innerHeight // confirmed working
+
+  console.log(scale);
+  Object.assign(el.style,{transform: "translate(-50%, -50%) scale(" + scale + ")"})
+}
+
+window.addEventListener('resize', function(){
+  scaleContent(rootEl)
+}, true);
+scaleContent(rootEl)
 
 const ioConfig = {
-  root: rootEl,
+  root: null,
   threshold: 0.5
 };
 

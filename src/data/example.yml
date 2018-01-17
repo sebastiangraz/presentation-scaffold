@@ -10,17 +10,39 @@ name:
   lastName: Graz
 
 slides:
-- title: This is a title
+- title:
+  slidecontent:
+  - content: <img src="/assets/images/overview.jpg"/>
+- title:
   flush: true
   slidecontent:
-  - content: DESIGN EXERCISE BRIEF “While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment.”
-- title: This is a title
+  - content: Design exercise brief
+  - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
+- title: completion time
+  flush: true
   slidecontent:
-  - content: <img src="http://localhost:3000/assets/images/avo.png"/>
-- title: This is a title
-  slidecontent:
-  - content: <img src="http://localhost:3000/assets/images/avo.png"/>
-  - content: “While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment.”
+  - content: '<div class="flex-ns justify-between">
+    <div class="ph2">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 tracked-tight">13<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Total time</div>
+    </div>
+    <div class="ph2">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">07<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Research</div>
+    </div>
+    <div class="ph2">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">02<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Wireframe</div>
+    </div>
+    <div class="ph2">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">04<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Visual</div>
+    </div>
+  </div>'
+
+
+
+
 
 # slides:
 #   - title: This is a title
