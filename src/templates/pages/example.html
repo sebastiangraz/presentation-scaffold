@@ -7,19 +7,26 @@ quote: I am some imported data (from this page)
 
 <div class="slide">
   <div class="slide__wrapper">
+
     {{#each example.slides}}
     <div class="slide__block">
       <div class="block-border">
         {{#if ./title}}
           <h1 class="black-40 f6 ttu tracked">{{./title}}</h1>
         {{/if}}
-        <div class="grid {{#flush}}padding{{/flush}}">
-        {{#each slidecontent}}
-          <div class="grid-item">
+        {{#if (gte 1 slidecontent.length) }}
+          {{#each slidecontent}}
             {{{content}}}
+          {{/each}}
+        {{ else }}
+          <div class="grid">
+            {{#each slidecontent}}
+              <div class="grid-item">
+                {{{content}}}
+              </div>
+            {{/each}}
           </div>
-        {{/each}}
-        </div>
+        {{/if }}
       </div>
     </div>
     {{/each}}
