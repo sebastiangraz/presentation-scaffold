@@ -11,17 +11,16 @@ $ep-gutter: 3%;
   img {
     width: 100%;
     display: block;
-    height: 50vh;
+    height: auto;
     object-fit: contain;
     object-position: bottom right;
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3vh;
+    grid-gap: 5vh;
   }
   .grid-item {
-    background: #fee;
   }
   //padding: 0 $ep-gutter $ep-gutter;
 
@@ -37,23 +36,34 @@ $ep-gutter: 3%;
     z-index: -1;
     width: 100%;
     left: 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: mandatory;
   }
 
   &__block {
-    background-color: #eee;
+    background-color: #f6f3f9;
     overflow: hidden;
     width: 100%;
+    perspective:600px;
     font-size: calc(100% + 8 * ((100vw - 320px) / 704));
     height: 100vh;
     padding: $ep-gutter;
     .block-border {
+      background: #fff;
+      height: 100%;
+      overflow: hidden;
       opacity: 0;
+      transform-origin: top center;
+      transform: rotate3d(.1,0,0, -6deg);
+      border-radius: 2px;
       padding: $ep-gutter * 2;
+      transition: 1s cubic-bezier(0, 0.69, 0, 1) all;
     }
     &.active {
       .block-border {
-        background: #fff;
-        height: 100%;
+        transform: rotate3d(.1,0,0, 0deg);
         opacity: 1;
       }
     }
