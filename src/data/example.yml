@@ -12,16 +12,23 @@ name:
 slides:
 - title:
   slidecontent:
-  - content: <img src="/assets/images/overview.jpg"/>
+  - content: '<div class="f-6">Design Exercise</div> <a href="../">Back</a>'
+
 - title:
   flush: true
   slidecontent:
+  - content: <img src="/assets/images/overview.jpg"/>
+
+- title:
+  flush: false
+  slidecontent:
   - content: Design exercise brief
   - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
+
 - title: completion time
-  flush: true
+  flush: false
   slidecontent:
-  - content: '<div class="flex-ns justify-between">
+  - content: '<div class="flex-ns justify-between mt5">
     <div class="ph2">
       <div class="h4 f-5-ns f-6 tc-ns fw2 tracked-tight">13<span class="ml2 f7 fw7">h</span></div>
       <div class="f6 fw5 tracked ttu tc-ns">Total time</div>
@@ -40,14 +47,15 @@ slides:
     </div>
   </div>'
 
+- title: Problem statement break down
+  flush: false
+  slidecontent:
+  - content: To begin with I broke up the brief statement and tried to understand the underlying meaning.
+  - content: For instance I noticed quite different narratives from sentence to sentence
+  - content: for me as a designer its important to not miss the tiny subtleties of a problem statement.
 
-
-
-
-# slides:
-#   - title: This is a title
-#     content:
-#       - <img src="http://localhost:3000/assets/images/avo.png"/>
-#       - Short content
-#       - Hey this is some more content
-#       - Hey this is some more content in the bottom
+- title: Research
+  flush: false
+  slidecontent:
+  - content: <p class="f1 ma0 lh-solid">Research</p>
+  - content: I choose ideation methods that helped me casting a wide net over the problem.

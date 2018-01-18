@@ -16,6 +16,7 @@ body {
 // Prevent empty space below images appearing
 img,
 svg {
+    width: 100%;
     vertical-align: top;
 }
 
@@ -23,4 +24,20 @@ svg {
 button, input, select, textarea {
     font-family: inherit;
 }
+
+a {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  &:hover {
+    color: #000;
+  }
+}
 // sass-lint:enddisable
+
+
+.row {
+  max-width: 800px;
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}

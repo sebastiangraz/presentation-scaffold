@@ -36,10 +36,10 @@ $ep-gutter: 3%;
     left: 50%;
     position: absolute;
     z-index: -1;
+    counter-reset: section;
   }
 
   &__block {
-    overflow: hidden;
     width: 100%;
     height: 100%;
     padding: $ep-gutter 0;
@@ -49,17 +49,24 @@ $ep-gutter: 3%;
     .block-border {
       background: #fff;
       height: 100%;
-      opacity: 0;
-      transform-origin: bottom center;
-      transform: rotate3d(.1,0,0, 6deg);
-      border-radius: 2px;
-      padding: $ep-gutter * 2;
+      // opacity: 0;
+      transform-origin: top center;
+      transform: rotate3d(.1,0,0, -6deg);
       transition: 1s cubic-bezier(0, 0.69, 0, 1) all;
+      &::before {
+        z-index: 1;
+        position: absolute;
+        top: 0rem;
+        left: -2rem;
+        display: inline-block;
+        counter-increment: section;
+        content: counter(section);
+      }
     }
     &.active {
       .block-border {
         transform: rotate3d(.1,0,0, 0deg);
-        opacity: 1;
+        // opacity: 1;
       }
     }
     @media only screen and (min-width:64em){

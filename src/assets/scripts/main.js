@@ -6,20 +6,23 @@ const blocks = document.querySelectorAll(".slide__block");
 
 function ioHandler(entries) {
   for (let entry of entries) {
+    entry.target.style.opacity = entry.intersectionRatio.toFixed(2);
+    console.log(entry);
+    entry.target.addEventListener('click', function(e) {
+      if (this.nextElementSibling == null) {
+        this.previousElementSibling.scrollIntoView({
+          'behavior': 'smooth',
+        });
+      } else {
+        this.nextElementSibling.scrollIntoView({
+          'behavior': 'smooth',
+        });
+      }
+
+    });
+
     if (entry.intersectionRatio > .5) {
       entry.target.classList.add('active')
-      entry.target.addEventListener('click', function(e) {
-        if (this.nextElementSibling == null) {
-          this.previousElementSibling.scrollIntoView({
-            'behavior': 'smooth',
-          });
-        } else {
-          this.nextElementSibling.scrollIntoView({
-            'behavior': 'smooth',
-          });
-        }
-
-      });
     } else {
       entry.target.classList.remove('active')
     }
@@ -41,9 +44,7 @@ function scaleContent(el) {
     viewportW / aspect.w,
     viewportH / aspect.h
   );
-  var ratio = window.innerWidth / window.innerHeight // confirmed working
-
-  console.log(scale);
+  var ratio = window.innerWidth / window.innerHeight
   Object.assign(el.style,{transform: "translate(-50%, -50%) scale(" + scale + ")"})
 }
 
@@ -52,12 +53,14 @@ window.addEventListener('resize', function(){
 }, true);
 scaleContent(rootEl)
 
-const ioConfig = {
-  root: null,
-  threshold: 0.5
-};
+// const ioConfig = {
+//   root: null,
+//   threshold: 0.5
+// };
+let config = []
+for(let i = 0; i <= 1; i+=0.01){ config.push(i) }
 
-const io = new IntersectionObserver(ioHandler, ioConfig);
+const io = new IntersectionObserver(ioHandler, {threshold: config});
 
 [].forEach.call(blocks, block => {
   io.observe(block)

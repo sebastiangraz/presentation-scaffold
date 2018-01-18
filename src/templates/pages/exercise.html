@@ -1,18 +1,15 @@
 ---
-title: Example Page title
-quote: I am some imported data (from this page)
+title: Case Study
 ---
-
-
 
 <div class="slide">
   <div class="slide__wrapper">
 
     {{#each example.slides}}
     <div class="slide__block">
-      <div class="block-border">
+      <div class="block-border {{#flush}} pa0 {{else}} pa5 {{/flush}}">
         {{#if ./title}}
-          <h1 class="black-40 f6 ttu tracked">{{./title}}</h1>
+          <h1 class="black-40 f6 mv5 ttu tracked">{{./title}}</h1>
         {{/if}}
         {{#if (gte 1 slidecontent.length) }}
           {{#each slidecontent}}
