@@ -27,10 +27,9 @@ $ep-gutter: 3%;
   p {
       margin: 0 0 10px;
   }
-
   &__wrapper {
-    height: 768px;
-    width: 1024px;
+    height: 720px;
+    width: 1120px;
     transform-origin: center center;
     top: 50%;
     left: 50%;
@@ -43,7 +42,7 @@ $ep-gutter: 3%;
     width: 100%;
     height: 100%;
     padding: $ep-gutter 0;
-    perspective:600px;
+    perspective:800px;
     font-size: calc(100% + 8 * ((100vw - 320px) / 704));
     // padding: $ep-gutter;
     .block-border {
@@ -56,8 +55,9 @@ $ep-gutter: 3%;
       &::before {
         z-index: 1;
         position: absolute;
-        top: 0rem;
-        left: -2rem;
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 10px;
         display: inline-block;
         counter-increment: section;
         content: counter(section);

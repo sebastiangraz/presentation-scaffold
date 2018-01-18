@@ -28,7 +28,7 @@ slides:
 - title: completion time
   flush: false
   slidecontent:
-  - content: '<div class="flex-ns justify-between mt5">
+  - content: '<div class="flex justify-between mt5">
     <div class="ph2">
       <div class="h4 f-5-ns f-6 tc-ns fw2 tracked-tight">13<span class="ml2 f7 fw7">h</span></div>
       <div class="f6 fw5 tracked ttu tc-ns">Total time</div>
