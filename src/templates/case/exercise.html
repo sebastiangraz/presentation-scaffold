@@ -7,7 +7,7 @@ title: Case Study
 
     {{#each example.slides}}
     <div class="slide__block">
-      <div class="block-border {{#flush}} pa0 {{else}} pa5 {{/flush}}">
+      <div class="block-border {{#flush}} pa0 {{else}} block-padding {{/flush}}">
         {{#if ./title}}
           <h1 class="black-40 f6 mv5 ttu tracked">{{./title}}</h1>
         {{/if}}
@@ -16,7 +16,8 @@ title: Case Study
             {{{content}}}
           {{/each}}
         {{ else }}
-          <div class="grid">
+          <div class="grid {{./layout }}">
+
             {{#each slidecontent}}
               <div class="grid-item">
                 {{{content}}}

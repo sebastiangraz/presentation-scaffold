@@ -21,6 +21,7 @@ slides:
 
 - title:
   flush: false
+  layout: grid-right
   slidecontent:
   - content: Design exercise brief
   - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
@@ -49,6 +50,7 @@ slides:
 
 - title: Problem statement break down
   flush: false
+  layout:
   slidecontent:
   - content: To begin with I broke up the brief statement and tried to understand the underlying meaning.
   - content: For instance I noticed quite different narratives from sentence to sentence
@@ -56,6 +58,21 @@ slides:
 
 - title: Research
   flush: false
+  layout: grid-right
   slidecontent:
   - content: <p class="f1 ma0 lh-solid">Research</p>
   - content: I choose ideation methods that helped me casting a wide net over the problem.
+
+- title: Image + text
+  flush: false
+  layout: grid-left
+  slidecontent:
+  - content: <img src="/assets/images/overview.jpg"/>
+  - content: For instance I noticed quite different narratives from sentence to sentence For instance I noticed quite different narratives from sentence to sentence
+
+- title: Image + text
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Questions and Assumptions
+  - content: '<div class="random-quote"></div>'

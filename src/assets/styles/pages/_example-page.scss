@@ -18,7 +18,17 @@ $ep-gutter: 3%;
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5vh;
+    grid-gap: 7vh;
+  }
+  .grid-left {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 7vh;
+  }
+  .grid-right {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 7vh;
   }
   .grid-item {
   }
@@ -45,13 +55,16 @@ $ep-gutter: 3%;
     perspective:800px;
     font-size: calc(100% + 8 * ((100vw - 320px) / 704));
     // padding: $ep-gutter;
+    .block-padding {
+      padding: 5%;
+    }
     .block-border {
       background: #fff;
       height: 100%;
       // opacity: 0;
       transform-origin: top center;
       transform: rotate3d(.1,0,0, -6deg);
-      transition: 1s cubic-bezier(0, 0.69, 0, 1) all;
+      transition: 1s cubic-bezier(0, 0.69, 0, .9) all;
       &::before {
         z-index: 1;
         position: absolute;
