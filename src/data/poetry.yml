@@ -1,0 +1,20 @@
+welcome: I am some imported data (from example.yml)
+
+list:
+  - Item one
+  - Item two
+  - Item three
+
+name:
+  firstName: Seb
+  lastName: Graz
+
+slides:
+- title:
+  slidecontent:
+  - content: '<div class="f-6">The Poetry Hour</div> <a href="../">Back</a>'
+
+- title:
+  flush: true
+  slidecontent:
+  - content: <img src="/assets/images/overview.jpg"/>
