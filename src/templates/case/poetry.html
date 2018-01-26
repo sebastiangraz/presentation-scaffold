@@ -1,5 +1,5 @@
 ---
-title: Case Study
+title: Poetry
 ---
 
 <div class="slide">
@@ -7,9 +7,9 @@ title: Case Study
 
     {{#each poetry.slides}}
     <div class="slide__block">
-      <div class="block-border {{#flush}} pa0 {{else}} block-padding {{/flush}}">
+      <div class="block-border {{#flush}} pa0 {{else}} block-padding {{/flush}}" style="color: {{color}}; background:{{bg}}">
         {{#if ./title}}
-          <h1 class="black-40 f6 mv5 ttu tracked">{{./title}}</h1>
+          <h1 class="current-color o-80 f6 mv5 ttu tracked">{{./title}}</h1>
         {{/if}}
         {{#if (gte 1 slidecontent.length) }}
           {{#each slidecontent}}
@@ -19,7 +19,7 @@ title: Case Study
           <div class="grid {{./layout }}">
 
             {{#each slidecontent}}
-              <div class="grid-item">
+              <div class="grid-item reveal">
                 {{{content}}}
               </div>
             {{/each}}

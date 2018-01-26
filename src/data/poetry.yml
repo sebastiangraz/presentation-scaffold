@@ -15,6 +15,6 @@ slides:
   - content: '<div class="f-6">The Poetry Hour</div> <a href="../">Back</a>'
 
 - title:
-  flush: true
   slidecontent:
-  - content: <img src="/assets/images/overview.jpg"/>
+  - content: Intro
+  - content: Indulging into the world of poetry can be quite daunting. Especially for an audience with increasingly short web-attention. At This Place we came up with a fresh way to introduce poetry for a new audience. Let poetry readers and enthusiasts design their own shareable poetry excerpts, also known as Poetry Memes.

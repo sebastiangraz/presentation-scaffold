@@ -1,0 +1,203 @@
+welcome: I am some imported data (from example.yml)
+
+list:
+  - Item one
+  - Item two
+  - Item three
+
+name:
+  firstName: Seb
+  lastName: Graz
+
+slides:
+- title:
+  slidecontent:
+  - content: '<div class="f-6">Design Exercise</div> <a href="../">Back</a>'
+
+- title:
+  flush: false
+  bg: url('/assets/images/exercise/overview.jpg') center center / cover no-repeat
+
+- title:
+  flush: false
+  slidecontent:
+  bg: url('/assets/images/exercise/allscreenswait.jpg') center center / cover no-repeat
+
+- title: completion time
+  flush: false
+  slidecontent:
+  - content: '<div class="flex justify-between mt5">
+    <div class="ph2 reveal">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 tracked-tight">13<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Total time</div>
+    </div>
+    <div class="ph2 reveal">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">07<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Research</div>
+    </div>
+    <div class="ph2 reveal">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">02<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Wireframe</div>
+    </div>
+    <div class="ph2 reveal">
+      <div class="h4 f-5-ns f-6 tc-ns fw2 black-30 tracked-tight">04<span class="ml2 f7 fw7">h</span></div>
+      <div class="f6 fw5 tracked ttu tc-ns">Visual</div>
+    </div>
+  </div>'
+
+
+- title:
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Design exercise brief
+  - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
+
+- title: Problem statement break down
+  flush: false
+  layout:
+  slidecontent:
+  - content: To begin with I broke up the brief statement and tried to understand the underlying meaning.
+  - content: For instance I noticed quite different narratives from sentence to sentence
+  - content: for me as a designer its important to not miss the tiny subtleties of a problem statement.
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f1 ma0 lh-solid">Research</p>
+  - content: "I choose ideation & research methods that helped me casting a wide net over the problem. <div class='flex flex-wrap pv5'>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Sketchstorming</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Brainstorming</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>5 Whys</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>HMWs</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>User Research</span>
+  </div>"
+
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Sketchstorming/Brainstorming
+  - content: <p>By quickly sketching my mental image I was able to determine feasibility of ideas and constraints. Being a visual learner I was able to fast-track certain ideas or discard them.</p><p>Complemented with brainstorming this method helped me quickly ask my internal stupid questions that would later be answered by the user interviews. At the same time giving me a good headstart on issues I found interesting</p>
+
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: 5 Whys
+  - content: <p>How would you feel if you were rated by your customers? </p><p>Do you usually leave reviews on other businesses using Google Maps or similar products?</p> <p> Again this method helped me surface the underlying problem for certain interview questions.</p>
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: How Might We's
+  - content: "With the initial data gathered I was able to translate them into How Might We's to help me properly reframe the initial assumptions and questions I had. After the HMWs were defined I categorised them into three different user groups. The very same users that would be affected by the final design solution.
+  <div class='flex flex-wrap pv5 justify-between'>
+      <span class='pv2 ph4 bg-whisper br-pill'>Servers</span>
+      <span class='pv2 ph4 bg-whisper br-pill'>Diners</span>
+      <span class='pv2 ph4 bg-whisper br-pill'>Business Owners</span>
+  </div>"
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Interview questions
+  - content: '<div class="cycle_interview bg-whisper"></div>'
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: User Interviews, Lightning Talks, Hospitality Industry knowledge
+  - content: <p class="pb3">Key quotes that led the design</p> <div class="cycle_research bg-whisper"></div>
+
+- title: Research
+  flush: false
+  layout: grid-right
+  bg:
+  slidecontent:
+  - content: Questions and Assumptions
+  - content: '<div class="cycle_questions bg-whisper"></div>'
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Technology constraints
+  - content: BLE, RFID and NFC, Digital Check-in.
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Research findings & truths
+  - content: "<p class='pb4'>My research has found that good restaurant experiences rely heavily on human-to-human interactions.</p>
+  <p class='pb4'> Restaurants run on established processes and generally shy away from tech if it means less face-time with the customer.</p>
+  <p class='pb4'> A restaurant’s experience can be severely impacted if the service is bad. Regardless of the food or the atmosphere.<p>"
+
+- title: Research
+  flush: false
+  layout:
+  slidecontent:
+  - content: <p class="f1 ma0 lh-title">Improve dining experiences by improving their service</p>
+  - content: "<p class='pb4'>To reach this goal we will</p><p class='pb4'>Help waiters become better at their craft by providing genuine feedback from customers</p>
+  <p class='pb4'> Incentivise waiters to learn about the hospitality industry</p>
+  <p class='pb4'> Help the waiters feel like a valued employee<p>"
+
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: User Journeys
+  - content: "To explore as many scenarios as possible I wrote 3 different user journeys throughout my design process. They all covered different technological constraints or sometimes ideas that I wanted to explore. <div class='flex flex-wrap pv5'>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Digital check-in</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>NFC & RFID</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>My Business</span>
+  </div>"
+
+- title: Wireframes
+  flush: false
+  layout: grid-right
+  bg: url('/assets/images/exercise/digital-wireframe.png') center center / cover no-repeat
+
+- title: Wireframes
+  flush: false
+  layout: grid-right
+  bg: url('/assets/images/exercise/waiterfeedback.png') center center / cover no-repeat
+
+- title: Wireframes
+  flush: false
+  bg: '#000'
+  color: '#fff'
+  slidecontent:
+  - content: '<video width="303" height="480" loop autoplay>
+  <source src="/assets/images/exercise/wireframe_output.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>'
+  - content: It was important for me to clearly visualise the whole journey. I created simple wireframe prototypes that I was able to send to people who I interviewed earlier. The feedback from the interviewees helped me form better experiences by listening to their painpoints and goals.
+
+- title:
+  flush: false
+  layout: grid-right
+  bg: url('/assets/images/exercise/allscreens.jpg') center center / cover no-repeat
+- title:
+  flush: false
+  layout: grid-right
+  bg: url('/assets/images/exercise/allscreens-waiter.jpg') center center / cover no-repeat
+
+- title: Visual
+  flush: false
+  bg: '#000'
+  color: '#fff'
+  slidecontent:
+  - content: '<video width="303" height="480" loop autoplay>
+  <source src="/assets/images/exercise/visual.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>'
+  - content: The visual journey clearly shows how the solution is integrated into Google Maps The user customers can now rate the food, the service and the ambience of a restaurant This will feed valuable data into Google Maps that is even more accurate which will help bringing better restaurant recommendations for future users.

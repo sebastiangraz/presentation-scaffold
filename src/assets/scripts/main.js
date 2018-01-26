@@ -1,6 +1,7 @@
 //import { forEach } from './forEach';
 // import * as Barba from './vendor/barba';
 
+import $ from './globals';
 
   const blocks = document.querySelectorAll(".slide__block");
 
@@ -18,16 +19,34 @@
     for (let entry of entries) {
       entry.target.style.opacity = entry.intersectionRatio.toFixed(2);
       var degree = entry.intersectionRatio.toFixed(1);
-      entry.target.addEventListener('click', function(e) {
-        if (this.nextElementSibling !== null) {
-          this.nextElementSibling.scrollIntoView({
-            'behavior': 'instant'
-          });
-        }
-      },true);
+
+      // entry.target.addEventListener('click', function(e) {
+      //   if (this.nextElementSibling !== null) {
+      //     this.nextElementSibling.scrollIntoView({
+      //       'behavior': 'instant'
+      //     });
+      //   }
+      // },true);
 
       if (entry.intersectionRatio > .5) {
         entry.target.classList.add('active')
+
+        document.onkeydown = function (e) {
+            switch (e.key) {
+                case 'ArrowLeft':
+                  entry.target.previousElementSibling.scrollIntoView({
+                    'behavior': 'instant'
+                  });
+                    break;
+                case 'ArrowRight':
+                  if (this.nextElementSibling !== null) {
+                    entry.target.nextElementSibling.scrollIntoView({
+                      'behavior': 'instant'
+                    });
+                  }
+            }
+        }
+
       } else {
         entry.target.classList.remove('active')
       }
@@ -107,6 +126,17 @@
     ]
 
 
+    var InterviewQuestions = [
+      "Are you working in the hospitality industry? And if not, how long did you work in the industry?",
+      "What were your motivations or goals when you joined the industry? ",
+      "What did you feel was the hardest part in working in the industry? And visa-versa; when did you feel happy working in the industry?",
+      "Do you usually leave reviews on other businesses using Google Maps or similar products?",
+      "If you dont leave reviews, why not? And if you do leave reviews on businesses, what made you leave a review?",
+      "As a waiter/bartender, how would you feel if you were rated by your own customers?",
+      "If you were given feedback from your customers, what feedback would you look for?",
+      "Do you think the hospitality industry needs to be more digital?"
+    ]
+
       // const cycle_research = document.querySelector('.cycle_research')
       // const length = userResearch.length;
       //
@@ -152,8 +182,46 @@
         document.querySelector('.cycle_research').innerHTML = obj
       },2000)
 
+      ArrayPlusDelay(InterviewQuestions, function(obj) {
+        document.querySelector('.cycle_interview').innerHTML = obj
+      },2000)
 
+      var rafId = null;
+      var delay = 120;
+      var lTime = 0;
 
+      function scroll() {
+        var scrollTop = $(window).scrollTop();
+        var height = $(window).height()
+        var visibleTop = scrollTop + height;
+        $('.reveal').each(function() {
+          var $t = $(this);
+          if ($t.hasClass('reveal_visible')) { return; }
+          var top = $t.offset().top;
+          if (top <= visibleTop) {
+            if (top + $t.height() < scrollTop) {
+              $t.removeClass('reveal_pending').addClass('reveal_visible');
+            } else {
+              $t.addClass('reveal_pending');
+              if (!rafId) requestAnimationFrame(reveal);
+            }
+          }
+        });
+      }
+      function reveal() {
+        rafId = null;
+        var now = performance.now();
+
+        if (now - lTime > delay) {
+          lTime = now;
+          var $ts = $('.reveal_pending');
+          $($ts.get(0)).removeClass('reveal_pending').addClass('reveal_visible');
+        }
+        if ($('.reveal_pending').length >= 1) rafId = requestAnimationFrame(reveal);
+      }
+
+      $(scroll);
+      $(window).scroll(scroll);
 
 
 

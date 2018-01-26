@@ -7,6 +7,7 @@
 html {
     font-family: $font--primary;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar {
@@ -46,4 +47,17 @@ a {
   width: 88%;
   margin: 0 auto;
   position: relative;
+}
+.current-color {
+  color: currentColor;
+}
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.8s, transform 1s cubic-bezier(0,.69,0,1);
+
+  &_visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
