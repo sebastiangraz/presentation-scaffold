@@ -30,7 +30,6 @@ export var questions = [
   "The rating of restaurants and waiters should be integrated. No point developing a new app or website, if there is an opportunity to include it in the existing Google ecosystem. For instance the Google maps reviews of restaurant",
   "Find out if Google can categorize restaurants that actually have waiters. Some restaurants can simply be a hole-in-the-wall with no servers",
   ]
-
   export var userResearch = [
     "Hospitality is a very un-digital industry — when they opened an iPad-only restaurant in Stockholm they made major losses in profit. Service is about human interaction",
     "In Poland its common to find waiter questionnaires where they put a field where they ask you to describe the waiters appearance. This is to identify which waiter the feedback is directed towards",
@@ -39,8 +38,6 @@ export var questions = [
     "My bartender friend said he’d prefer the whole thing to be based on anonymity",
     "Being rated as a waiter sounds horrible!"
   ]
-
-
   export var InterviewQuestions = [
     "Are you working in the hospitality industry? And if not, how long did you work in the industry?",
     "What were your motivations or goals when you joined the industry? ",
@@ -50,4 +47,15 @@ export var questions = [
     "As a waiter/bartender, how would you feel if you were rated by your own customers?",
     "If you were given feedback from your customers, what feedback would you look for?",
     "Do you think the hospitality industry needs to be more digital?"
+  ]
+  export var hmw = [
+    "HMW help the servers not feel scrutinised by the ratings",
+    "HMW design a solution that excludes certain waiters that don’t want to participate",
+    "HMW design a solution helps waiters learn their craft better",
+    "HMW design a solution that makes server feel valued?",
+    "HMW help servers find a better job in the market",
+    "HMW make sure the customer is guided to give constructive feedback. ",
+    "HMW design a solution that doesn’t force restaurant goers to review either the staff or the restaurant if they dont want to",
+    "HMW design a solution that lets users know that they can review their server",
+    "HMW design a solution that includes all the waiters that have been involved with a specific restaurant goer"
   ]

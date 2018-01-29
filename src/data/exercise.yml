@@ -82,6 +82,15 @@ slides:
   - content: Sketchstorming/Brainstorming
   - content: <p>By quickly sketching my mental image I was able to determine feasibility of ideas and constraints. Being a visual learner I was able to fast-track certain ideas or discard them.</p><p>Complemented with brainstorming this method helped me quickly ask my internal stupid questions that would later be answered by the user interviews. At the same time giving me a good headstart on issues I found interesting</p>
 
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Competitor analysis. Key findings
+  - content: "<p>Grate — Rate your server. Hidden server scores led to unbiased perception.</p>
+  <p>Uber — Emphasis on incentivised rating</p>
+  <p>Zagat — Separates food, decor and service separately, required adoption</p>"
+
 
 - title: Research
   flush: false
@@ -95,12 +104,14 @@ slides:
   layout: grid-right
   slidecontent:
   - content: How Might We's
-  - content: "With the initial data gathered I was able to translate them into How Might We's to help me properly reframe the initial assumptions and questions I had. After the HMWs were defined I categorised them into three different user groups. The very same users that would be affected by the final design solution.
-  <div class='flex flex-wrap pv5 justify-between'>
+  - content: "HMWs helped me properly reframe the initial assumptions and questions I had. After the HMWs were defined I categorised them into three different user groups.
+  <div class='flex flex-wrap pv4 justify-between'>
       <span class='pv2 ph4 bg-whisper br-pill'>Servers</span>
       <span class='pv2 ph4 bg-whisper br-pill'>Diners</span>
       <span class='pv2 ph4 bg-whisper br-pill'>Business Owners</span>
-  </div>"
+  </div>
+  <div class='cycle_hmw bg-whisper'></div>
+  "
 
 - title: Research
   flush: false

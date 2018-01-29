@@ -2,6 +2,12 @@ import './cycle';
 import './scrollReveal';
 
 
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    console.log('doc ready');
+  }
+};
+
   const blocks = document.querySelectorAll(".slide__block");
 
   let config = []
@@ -19,13 +25,6 @@ import './scrollReveal';
       entry.target.style.opacity = entry.intersectionRatio.toFixed(2);
       var degree = entry.intersectionRatio.toFixed(1);
 
-      // entry.target.addEventListener('click', function(e) {
-      //   if (this.nextElementSibling !== null) {
-      //     this.nextElementSibling.scrollIntoView({
-      //       'behavior': 'smooth'
-      //     });
-      //   }
-      // },true);
 
       if (entry.intersectionRatio > .5) {
         entry.target.classList.add('active')
@@ -34,15 +33,15 @@ import './scrollReveal';
             switch (e.key) {
                 case 'ArrowLeft':
                   if (entry.target.previousElementSibling !== null) {
-                    entry.target.previousElementSibling.scrollIntoViewIfNeeded({
-                      'behavior': 'smooth'
+                    entry.target.previousElementSibling.scrollIntoView({
+                      'behavior': 'instant'
                     });
                   }
                     break;
                 case 'ArrowRight':
                   if (entry.target.nextElementSibling !== null) {
-                    entry.target.nextElementSibling.scrollIntoViewIfNeeded({
-                      'behavior': 'smooth'
+                    entry.target.nextElementSibling.scrollIntoView({
+                      'behavior': 'instant'
                     });
                   }
             }

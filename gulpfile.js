@@ -146,7 +146,7 @@ gulp.task('templates', (done) => {
       },
       mod: function mod(a, b) {
         return +a % +b;
-      },
+      }
     },
   });
   done();
