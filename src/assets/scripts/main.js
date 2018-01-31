@@ -1,12 +1,5 @@
-import './cycle';
+// import './cycle';
 import './scrollReveal';
-
-
-document.onreadystatechange = () => {
-  if (document.readyState === 'complete') {
-    console.log('doc ready');
-  }
-};
 
   const blocks = document.querySelectorAll(".slide__block");
 
