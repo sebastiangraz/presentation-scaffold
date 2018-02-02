@@ -110,7 +110,6 @@ var questions = [
                 intervalObj.tick=0
               }
           }, delay)
-
     return interval
   }
 
@@ -123,7 +122,7 @@ var questions = [
   function attachInterval(intervalObj){
     intervalObj.interval =  ArrayPlusDelay(function(obj) {
      domSelectorByQuery('.'+intervalObj.className).innerHTML = obj
-   },1000,intervalObj)
+   },900,intervalObj)
   }
 
   function addMouseOverEvent(intervalObj){

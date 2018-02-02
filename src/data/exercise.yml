@@ -50,7 +50,7 @@ slides:
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Brief</p>
+  - content: <p class="f2 lh-title">Brief</p>
   - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
 
 - title: Problem statement break down
@@ -61,26 +61,37 @@ slides:
   - content: For instance I noticed quite different narratives from sentence to sentence
   - content: for me as a designer its important to not miss the tiny subtleties of a problem statement.
 
+
 - title: Research
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2 ma0 lh-solid">Research</p>
+  - content: '<p class="f2 lh-title">Research divergence</p>'
   - content: "I choose ideation & research methods that helped me casting a wide net over the problem. <div class='flex flex-wrap pv5'>
       <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Sketchstorming</span>
       <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Brainstorming</span>
-      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Competitor </span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Competitor research</span>
       <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>5 Whys</span>
       <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>HMWs</span>
       <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>User Research</span>
   </div>"
 
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f2 lh-title">User Journeys</p>
+  - content: "I had time to explore 3 different user journeys throughout my design process. They all covered different technological constraints or sometimes ideas that I wanted to explore. <div class='flex flex-wrap pv5'>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Digital check-in</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>NFC & RFID</span>
+      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>My Business</span>
+  </div>"
 
 - title: Research
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Sketchstorming.</p> <p>Helped me determine feasibility of ideas and constraints. Being a visual learner I was able to fast-track certain ideas or discard them.</p>
+  - content: <p class="f2 lh-title">Sketchstorming</p> <p>Helped me determine feasibility of ideas and constraints. Being a visual learner I was able to fast-track certain ideas or discard them.</p>
   - content: <img src="/assets/images/exercise/wires.jpg" alt="">
 
 
@@ -88,14 +99,14 @@ slides:
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Brainstorming</p>
-  - content: <p>Complemented with brainstorming this method helped me quickly ask my internal stupid questions that would later be answered by the user interviews. At the same time giving me a good headstart on issues I found interesting</p>
+  - content: <p class="f2 lh-title">Brainstorming</p>
+  - content: <p>Brainstorming kickstarted my internal (sometimes stupid) questions that would later be answered by the user interviews. At the same time giving me a good headstart on issues or clues I found interesting. Some of the output was later converted to HMWs.</p>
 
 - title: Research
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Competitor analysis</p>
+  - content: <p class="f2 lh-title">Competitor analysis</p>
   - content: "<p>Key findings</p>
   <p>Grate — Rate your server. Hidden server scores led to unbiased perception.</p>
   <p>Uber — Emphasis on incentivised rating</p>
@@ -106,14 +117,7 @@ slides:
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">5 Whys<p>
-  - content: <p>How would you feel if you were rated by your customers? </p><p>Do you usually leave reviews on other businesses using Google Maps or similar products?</p> <p> Again this method helped me surface the underlying problem for certain interview questions.</p>
-
-- title: Research
-  flush: false
-  layout: grid-right
-  slidecontent:
-  - content: <p class="f2">How Might We's</p>
+  - content: <p class="f2 lh-title">How Might We's</p>
   - content: "HMWs helped me properly reframe the initial assumptions and questions I had. After the HMWs were defined I categorised them into three different user groups.
   <div class='flex flex-wrap pv4 justify-between'>
       <span class='pv2 ph4 bg-whisper br-pill'>Servers</span>
@@ -127,8 +131,16 @@ slides:
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Interview questions</p>
+  - content: <p class="f2 lh-title">Interview questions</p>
   - content: '<div class="cycle_interview bg-whisper"></div>'
+
+
+- title: Research
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f2 lh-title">5 Whys<p>
+  - content: <p>How would you feel if you were rated by your customers? </p><p>Do you usually leave reviews on other businesses using Google Maps or similar products?</p> <p> Again this method helped me surface the underlying problem for certain interview questions.</p>
 
 - title: Research
   flush: false
@@ -142,50 +154,63 @@ slides:
   layout: grid-right
   bg:
   slidecontent:
-  - content: <p class="f2">Questions and Assumptions</p>
+  - content: <p class="f2 lh-title">Questions and Assumptions</p>
   - content: '<div class="cycle_questions bg-whisper"></div>'
 
 - title: Research
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Technology constraints</p>
-  - content: BLE, RFID and NFC, Digital Check-in.
+  - content: <p class="f2 lh-title">Technology constraints</p>
+  - content: <p>BLE, RFID and NFC, Digital Check-in.</p> <p>All technologies that were considered during my design process. Ultimately none of the technologies were used in the final design proposal.</p> <p>I wanted waiters to recieve genuine feedback from diners who fit into the reviewer-type user, and not force all restaurant goers into reviewing waiters. </p>
+
+
 
 - title: Research
   flush: false
   layout: grid-right
   slidecontent:
-  - content: <p class="f2">Research findings & truths</p>
+  - content: <p class="f2 lh-title">Research findings & truths</p>
   - content: "<p class='pb4'>My research has found that good restaurant experiences rely heavily on human-to-human interactions.</p>
   <p class='pb4'> Restaurants run on established processes and generally shy away from tech if it means less face-time with the customer.</p>
   <p class='pb4'> A restaurant’s experience can be severely impacted if the service is bad. Regardless of the food or the atmosphere.<p>"
 
 - title: Research
   flush: false
-  layout:
+  layout: grid-right
   slidecontent:
-  - content: <p class="f2 ma0 lh-title">Improve dining experiences by improving their service</p>
-  - content: "<p class='pb4'>To reach this goal we will</p><p class='pb4'>Help waiters become better at their craft by providing genuine feedback from customers</p>
-  <p class='pb4'> Incentivise waiters to learn about the hospitality industry</p>
-  <p class='pb4'> Help the waiters feel like a valued employee<p>"
-
+  - content: <p class="f2 lh-title">Research Convergence</p>
+  - content: <p>Sans NFC devices</p><p>Google Maps Integration</p><p>Instant adoption</p><p>No logic to find if restaurants have servers</p><p>Google My Business</p><p>Diners are not forced to leave review</p>
 
 - title: Research
   flush: false
-  layout: grid-right
+  layout:
   slidecontent:
-  - content: <p class="f2">User Journeys</p>
-  - content: "To explore as many scenarios as possible I wrote 3 different user journeys throughout my design process. They all covered different technological constraints or sometimes ideas that I wanted to explore. <div class='flex flex-wrap pv5'>
-      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>Digital check-in</span>
-      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>NFC & RFID</span>
-      <span class='pv2 mt2 mr2 ph4 bg-whisper br-pill'>My Business</span>
-  </div>"
+  - content: <p class="f2 lh-title">Improve dining experiences by improving their service</p>
+  - content: "<p class='pb3 f5'>To reach this goal we will</p><p class='pb3'>Help waiters become better at their craft by providing genuine feedback from customers</p>
+  <p class='pb3'> Incentivise waiters to learn about the hospitality industry</p>
+  <p class='pb3'> Help the waiters feel like a valued employee<p><p class='pb3'>Make diners feel like they can contribute to the experience<p>"
 
 - title: Wireframes
   flush: false
   layout: grid-right
   bg: url('/assets/images/exercise/digital-wireframe.png') center center / cover no-repeat
+
+- title: Wireframes
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f2 lh-title">Wireframing</p>
+  - content: <p>As the project progressed and more decisions were established. A final user journey was then turned into a digital wireframe.</p><p>The final wireframe was annotated and referring back to the goals of this project.</p>
+
+- title: Wireframes
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f2 lh-title">Wireframing findings</p>
+  - content: "<p>Regular reviewers not disrupted with the newly added review categories, still able to rate the restaurant experience as a whole</p> <p>The general design strategy follows a bottom-up approach, where small pieces of information from the diner adds up to a whole data set.</p>
+  <p>Google's My Business will handle logistics such as displaying which waiter works certain hours/days</p>
+  <p>Diners were presented with a questionnaire with predefined questions with the goal of getting more tangible data</p>"
 
 - title: Wireframes
   flush: false
@@ -203,10 +228,19 @@ slides:
 </video>'
   - content: It was important for me to clearly visualise the whole journey. I created simple wireframe prototypes that I was able to send to people who I interviewed earlier. The feedback from the interviewees helped me form better experiences by listening to their painpoints and goals.
 
+
 - title:
   flush: false
   layout: grid-right
   bg: url('/assets/images/exercise/allscreens.jpg') center center / cover no-repeat
+
+- title: Visual Design
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: <p class="f2 lh-title">Visual design findings</p>
+  - content: "<p>Video profile snippets rather than static imagery</p><p>By splitting the review categories, restaurants get more accurate data</p><img height='50' src='/assets/images/exercise/categories.png' alt=''>"
+
 - title:
   flush: false
   layout: grid-right
