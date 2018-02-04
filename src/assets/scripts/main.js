@@ -15,12 +15,14 @@ import './scrollReveal';
 
   function ioHandler(entries) {
     for (let entry of entries) {
-      // entry.target.style.opacity = entry.intersectionRatio.toFixed(2);
+      //entry.target.style.opacity = entry.intersectionRatio.toFixed(2);
       var degree = entry.intersectionRatio.toFixed(1);
 
 
       if (entry.intersectionRatio > .5) {
         entry.target.classList.add('active')
+
+
 
         document.onkeydown = function (e) {
 
@@ -28,10 +30,6 @@ import './scrollReveal';
                 case 'ArrowLeft':
 
                   if (entry.target.previousElementSibling !== null) {
-                    for (var i = 0; i < document.querySelectorAll('.slide__block').length; i++) {
-                      document.querySelectorAll('.slide__block')[i].classList.remove('prev','next');
-                    }
-                    entry.target.previousElementSibling.previousElementSibling.classList.add('prev')
                     entry.target.previousElementSibling.scrollIntoView({
                       'behavior': 'instant'
                     });
@@ -39,10 +37,6 @@ import './scrollReveal';
                     break;
                 case 'ArrowRight':
                   if (entry.target.nextElementSibling !== null) {
-                    for (var i = 0; i < document.querySelectorAll('.slide__block').length; i++) {
-                      document.querySelectorAll('.slide__block')[i].classList.remove('prev','next');
-                    }
-                    entry.target.nextElementSibling.nextElementSibling.classList.add('next')
                     entry.target.nextElementSibling.scrollIntoView({
                       'behavior': 'instant'
                     });
@@ -51,7 +45,9 @@ import './scrollReveal';
         }
 
       } else {
-        entry.target.classList.remove('active')
+        entry.target.classList.remove('active');
+        // entry.target.nextElementSibling.classList.remove('next');
+
       }
     }
   }

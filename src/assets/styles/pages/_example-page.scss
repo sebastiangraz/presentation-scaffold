@@ -15,6 +15,9 @@ $ep-gutter: 3%;
   //   object-fit: contain;
   //   object-position: left center;
   // }
+  .object-fit-cover {
+    object-fit: cover;
+  }
   img {
     width: 100%;
     display: block;
@@ -32,6 +35,16 @@ $ep-gutter: 3%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 7vh;
+  }
+  .blur {
+    filter:blur(24px);
+  }
+  @keyframes aniZoom {
+    from {transform: scale(1.9);}
+    to {transform: scale(1);}
+  }
+  .ani-zoom {
+    animation: aniZoom 10s infinite alternate linear;
   }
   .grid-right {
     display: grid;
@@ -67,23 +80,14 @@ $ep-gutter: 3%;
     .block-padding {
       padding: 5%;
     }
-    &.prev {
-      .block-border {
-        transform-origin: top center;
-        transform: rotate3d(.1,0,0, -3deg) translateY(-200px);
-      }
-    }
-    &.next {
-      .block-border {
-        transform-origin: bottom center;
-        transform: rotate3d(.1,0,0, -3deg) translateY(200px);
-      }
-    }
     .block-border {
       background: #fff;
       height: 100%;
+      overflow: hidden;
       filter:grayscale(100%);
       opacity: .2;
+      transform-origin: bottom center;
+      transform: rotate3d(.1,0,0, -3deg) translateY(24px);
       transition: .8s cubic-bezier(.1, 0.69, .2, 1) all;
       &::before {
         z-index: 1;

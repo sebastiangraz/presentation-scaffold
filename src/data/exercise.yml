@@ -12,7 +12,8 @@ name:
 slides:
 - title:
   slidecontent:
-  - content: '<div class="f-6">Design Exercise</div> <a href="../">Back</a>'
+  - content: '<div class="f-6 z-2 relative">Design Exercise</div> <a class="z-2 relative" href="../">Back</a>
+  '
 
 - title:
   flush: false
@@ -51,7 +52,7 @@ slides:
   layout: grid-right
   slidecontent:
   - content: <p class="f2 lh-title">Brief</p>
-  - content: <p class="ma0">While there are many ways to rate and review restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit  positive comments and constructive suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
+  - content: <p class="ma0">While there are many ways to <span class="pv1 ph2 mh1 b--black-20 ba br2">rate</span> and <span class="pv1 ph2 mh1 b--black-20 ba br2">review</span> restaurants, these are not focused on evaluating individuals waiters. Design an experience where diners can submit <span class="pv1 ph2 mh1 b--black-20 ba br2">positive comments</span> and <span class="pv1 ph2 mh1 b--black-20 ba br2">constructive</span> suggestions for the wait staff, and waiters can use this feedback to both improve and help to secure new employment</p>
 
 - title: Problem statement break down
   flush: false
@@ -239,7 +240,20 @@ slides:
   layout: grid-right
   slidecontent:
   - content: <p class="f2 lh-title">Visual design findings</p>
-  - content: "<p>Video profile snippets rather than static imagery</p><p>By splitting the review categories, restaurants get more accurate data</p><img height='50' src='/assets/images/exercise/categories.png' alt=''>"
+  - content: "<p>Video profile snippets rather than static imagery</p><p>By splitting the review categories, restaurants get more accurate data</p><img class='mb4' height='50' src='/assets/images/exercise/categories.png' alt=''><p>Questionnaire is designed to grab as much data the diner is willing to share. After all questions are depleted the user is rewarded with Local Guide points or vouchers</p>"
+
+- title: Visual Design
+  flush: false
+  slidecontent:
+  - content: "<p class='pb3'>Flow of bottom-up review strategy</p>
+  <img class='mb4' src='/assets/images/exercise/ratingflow.png' alt=''>"
+
+- title: Visual Design
+  flush: false
+  slidecontent:
+  - content: "<p class='pb3'>Waiters have separate app for recieving feedback</p>
+  <p>The waiter can also download a document from the app that displays achievements throughout the job duration.</p><p>The app includes positive feedback in forms of compliments from the customers.</p><p>The app is filled with suggestions to increase their tips</p>"
+  - content: <img class='mb4' src='/assets/images/exercise/wait.png' alt=''>
 
 - title:
   flush: false
@@ -252,7 +266,33 @@ slides:
   color: '#fff'
   slidecontent:
   - content: '<video width="303" height="480" loop autoplay>
+  <source src="/assets/images/exercise/framer.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>'
+  - content: <p>A basic Framer prototype showcasing one potential solution for progressing the questionnaire.</p> <p>The goal is to grab as much data as possible with the least amount of touch interactions. <p>Meanwhile retaining the ability to undo by swiping back if needed.</p>
+
+- title: Visual
+  flush: false
+  bg: '#000'
+  color: '#fff'
+  slidecontent:
+  - content: '<video width="303" height="480" loop autoplay>
   <source src="/assets/images/exercise/visual.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>'
-  - content: The visual journey clearly shows how the solution is integrated into Google Maps The user customers can now rate the food, the service and the ambience of a restaurant This will feed valuable data into Google Maps that is even more accurate which will help bringing better restaurant recommendations for future users.
+  - content: '<p>Visual prototype going through a review journey.</p>
+    <p>Iterated using feedback from users that were interviewed.</p>'
+
+
+- title: Conclusion
+  flush: false
+  layout: grid-right
+  slidecontent:
+  - content: Closing thoughts
+  - content: '
+    <p>Mutual incentive reviewing</p>
+    <p>Rating scoring</p>
+    <p>Tone of voice important</p>
+    <p>Improving feedback data being sent between waiter and diner</p>
+    <p>Explore Food + Ambience reviews</p>
+'
